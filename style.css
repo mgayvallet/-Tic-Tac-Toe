@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1A2A33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Outfit;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 32px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    background-color: #1F3641;
+    width: 100%;
+    align-items: center;
+    padding: 24px;
+    border-radius: 15px;
+    color: #A8BFC9;
+    box-shadow: 0px -8px 0px 0px #10212A inset;
+    gap: 24px;
+}
+
+.selec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 8px;
+    height: 72px;
+    background-color: #1A2A33;
+    width: 100%;
+}
+
+.divCercle{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #A8BFC9;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.divX{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.divX:hover{
+    background: #A8BFC90D;
+}
+
+.divBtn{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    width: 100%;
+}
+
+
+.CPU{
+    box-shadow: 0px -8px 0px 0px #CC8B13 inset;
+    background-color: #F2B137;
+    color: #1A2A33;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.16px;
+    letter-spacing: 1px;
+    text-align: center;
+    height: 56px;
+    border-radius: 15px;
+    border: none;
+}
+
+.DOUBLE{
+    box-shadow: 0px -8px 0px 0px #118C87 inset;
+    background-color: #31C3BD;
+    color: #1A2A33;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.16px;
+    letter-spacing: 1px;
+    text-align: center;
+    height: 56px;
+    border-radius: 15px;
+    border: none;
+}
+
+@media screen and (min-width: 768px){
+    main{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    main{
+        width: 20%;
+    }
+}
