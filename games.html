@@ -4,53 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="games.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <section class="topMain">
-            <img src="assets/Group 2.png" alt="logo ">
-
-            <div class="turn">
-                <img src="assets/Combined Shape Copy 2.png" alt="imgTurn" class="imgTurn">
-                <p class="pTurn">TURN</p>
-            </div>
-
-            <div class="returnDiv">
-                <img src="assets/Redo.png" alt="retour">
-            </div>
-        </section>
-        <section class="basMain">
-            <div class="grille">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-            </div>
-
-            <div class="basBasMain">
-                <div class="you">
-                    <p>X (YOU)</p>
-                    <span>14</span>
+    <main id="mainGame">
+        <div class="overlay-start-game">
+            <img src="assets/Group 2.png" alt="logo">
+            <section class="section">
+                <h2>PICK PLAYER 1’S MARK</h2>
+                <div class="selec">
+                    <div class="divX">
+                        <img src="assets/Combined Shape Copy 2.svg" alt="croix" class="imgDivX"> 
+                    </div>  
+    
+                    <div class="divCercle">
+                        <img src="assets/Oval Copy.svg" alt="oval" class="imgDivCercle">
+                    </div>
                 </div>
-
-                <div class="ties ">
-                    <p>TIES</p>
-                    <span>32</span>
-                </div>
-
-
-                <div class="other">
-                    <p>O (CPU)</p>
-                    <span>11</span>
-                </div>
-
+                <p>REMEMBER : <span class="goFirst">O</span> GOES FIRST</p>
+            </section>
+            <div class="divBtn">
+                <button class="CPU">NEW GAME (VS CPU)</button>
+                <button class="DOUBLE">NEW GAME  (VS PLAYER)</button>
             </div>
+        </div>
+
+        <section class="overlayGame">
+
+            <section class="topMain">
+                <img src="assets/Group 2.png" alt="logo ">
+    
+                <div class="turn">
+                    <img src="assets/Combined Shape Copy 2.svg" alt="imgTurn" class="imgTurn">
+                    <p class="pTurn">TURN</p>
+                </div>
+    
+                <div class="returnDiv">
+                    <img src="assets/Redo.png" alt="retour">
+                </div>
+            </section>
+            <section class="basMain">
+                <div class="grille">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+    
+                <div class="basBasMain">
+                    <div class="you">
+                        <p>X (YOU)</p>
+                        <span>14</span>
+                    </div>
+    
+                    <div class="ties ">
+                        <p>TIES</p>
+                        <span>32</span>
+                    </div>
+    
+    
+                    <div class="other">
+                        <p>O (CPU)</p>
+                        <span>11</span>
+                    </div>
+    
+                </div>
+            </section>      
         </section>
 
     </main>
