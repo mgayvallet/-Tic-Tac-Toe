@@ -70,18 +70,36 @@ main{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 100px);
     gap: 20px;
-
 }
 
 .box {
     width: 100%;
-    height: 100px;
+    height: 100%;
     background-color: #1F3641;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0px -8px 0px 0px #10212A inset;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.box:hover {
+    background-color: #2A4756;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.box img {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.box img:hover {
+    transform: scale(1.2);
 }
 
 .overlayGame{
@@ -222,7 +240,6 @@ span{
     letter-spacing: 2.5px;
     text-align: center;
     color: #A8BFC9;
-
 }
 
 @media screen and (min-width: 768px){
